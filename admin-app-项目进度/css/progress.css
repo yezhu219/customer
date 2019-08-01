@@ -1,0 +1,90 @@
+.progress .header {
+    padding: 0.2rem 0.4rem 0 1.24rem;
+}
+
+.pro .iconfont {
+    font-size: 0.4rem;
+}
+.progress .header .icon-arrow-left {
+    left: 0.4rem;
+    z-index: 100;
+}
+
+.search {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-radius: 0.4rem;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    line-height: 0.4rem;
+    border-radius: 0.4rem;
+    padding-left: 1.0666666666666667rem;
+    font-size: 0.4rem;
+}
+
+.search .icon-sousuo {
+    top: 50%;
+    left: 0.3333333333333333rem;
+    transform: translateY(-50%);
+}
+
+.progress .content {
+    padding: 0.6666666666666666rem 0.4rem;
+}
+
+.pro  {
+    width: 100%;
+    font-size: 0.4rem;
+}
+
+.pro li {
+    width: 33.33%;
+}
+
+.pro li span {
+     display: inline-block;
+     height: 0.6666666666666666rem;
+     line-height: 0.6666666666666666rem;
+}
+ .arrow-down::after {
+     content:'';
+     width: 0;
+     height: 0;
+     position: absolute;
+     top: 53%;
+     transform: translateY(-30%);
+     right: -0.5rem;
+     border-left: 0.2rem solid transparent;
+     border-right: 0.2rem solid transparent;
+     border-top: 0.2rem solid #999;
+     border-bottom: 0.2rem solid transparent;
+}
+ 
+
+.pro-item {
+     height: 2.6rem;
+    border-bottom: 1px solid #eeeeee;
+}
+.left {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.left p {
+    padding-left: 0.8rem;
+    margin-top: 0.2rem;
+}
+ .left ,.right {
+     width: 50%;
+}
+.right {
+     line-height: 2.6rem;
+}
+ .right .icon-jiantou {
+     font-size: 0.3rem;
+     margin-left: 0.26666666666666666rem;
+}
+ 

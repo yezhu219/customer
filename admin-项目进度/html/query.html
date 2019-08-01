@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/icon/iconfont.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/query.css">
+  <link rel="stylesheet" href="../lib/css/dcalendar.picker.css" />
+  <script type="text/javascript" src="../lib/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="../lib/js/dcalendar.picker.js"></script>
+</head>
+<body>
+<div class="container pr">
+  <div class="aside pa">
+    <ul class="nav pa text-c">
+      <li><a href="./progress.html"><i class="iconfont icon-liebiao mr-5"></i>施工进度实施单</a></li>
+      <li><a href="./report.html"><i class="iconfont icon-baobiao mr-5"></i>报表提交</a></li>
+      <li><a href="./any.html"><i class="iconfont icon-chaxun mr-5"></i>任意报表</a></li>
+      <li><a href="./query.html"><i class="iconfont icon-baobiaochaxun mr-5"></i>查询</a></li>
+    </ul>
+  </div>
+  <div class="main query">
+    <div class="header bg-f c-999 mb-20 pr">
+      <input type="text" placeholder="信息太多？搜搜看...">
+      <span class="fr">2019.12.12 12:59:59</span>
+      <i class="iconfont icon-sousuo pa"></i>
+    </div>
+    <div class="content bg-f pd-20">
+      <div class="pro-item bg-f pr">
+        <h5 class="fz20">选择</h5>
+        <div class="date-select pr">
+          <!-- <span class="fl">提交表单</span> -->
+          <select class="pa">
+            <option value="提交表单">提交表单1</option>
+            <option value="提交表单">提交表单2</option>
+            <option value="提交表单">提交表单3</option>
+          </select>
+          <span class="fr pr">
+            <i class="iconfont icon-below-s q-sj pr"></i>
+            <i class="iconfont icon-rili"></i>
+          </span>
+        </div>
+        <div class="date-sel pa">
+          <input type="text" id="datepicker">
+        </div>
+      </div>
+      <div class="pro-item bg-f">
+        <h5 class="fz20">关键词</h5>
+        <div class="date-select keyword">
+          <input type="text" placeholder="请填写" class="fl">
+          <span class="fr btn c-fff text-c">查询</span>
+        </div>
+      </div>
+      <!--施工进度单-->
+      <div class="progress-item">
+        <div class="p-head">
+          <span class="fl">施工进度实施单</span>
+          <span class="fr">眉山</span>
+        </div>
+        <table class="p-content text-l">
+          <tr class="c-999">
+            <th>日期</th>
+            <th>施工项目</th>
+            <th class="text-r">施工方负责人</th>
+          </tr>
+          <tr>
+            <td>2019.07.05</td>
+            <td>人力资源部</td>
+            <td class="text-r">李经理</td>
+          </tr>
+        </table>
+      </div>
+      <div class="progress-item">
+        <div class="p-head">
+          <span class="fl">施工进度实施单</span>
+          <span class="fr">眉山</span>
+        </div>
+        <table class="p-content text-l">
+          <tr class="c-999">
+            <th>日期</th>
+            <th>施工项目</th>
+            <th class="text-r">施工方负责人</th>
+          </tr>
+          <tr>
+            <td>2019.07.05</td>
+            <td>人力资源部</td>
+            <td class="text-r">李经理</td>
+          </tr>
+        </table>
+      </div>
+      <div class="progress-item">
+        <div class="p-head">
+          <span class="fl">施工进度实施单</span>
+          <span class="fr">眉山</span>
+        </div>
+        <table class="p-content text-l">
+          <tr class="c-999">
+            <th>日期</th>
+            <th>施工项目</th>
+            <th class="text-r">施工方负责人</th>
+          </tr>
+          <tr>
+            <td>2019.07.05</td>
+            <td>人力资源部</td>
+            <td class="text-r">李经理</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+  <script>
+    $(function () {
+      $('#datepicker').dcalendarpicker({ format: 'yyyy.mm.dd' });
+    })
+  </script>
+</body>
+</html>

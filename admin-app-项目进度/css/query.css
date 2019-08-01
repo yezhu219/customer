@@ -1,0 +1,106 @@
+.content {
+    padding: 0 0.4rem;
+    font-size: 0.4rem;
+}
+
+.date-select select {
+    width: 100%;
+    height: 1.2rem;
+    padding-left: 0.5333333333333333rem;
+    font-size: 0.4rem;
+    border-radius: 0.06666666666666667rem;
+}
+
+.date-select select option {
+    font-size: 0.4rem;
+}
+
+.date-select {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.4rem;
+    border-radius: 0.06666666666666667rem;
+    margin-bottom: 0.98rem;
+}
+
+.date-select .iconfont {
+    font-size: 0.4rem;
+}
+
+.date-select .icon-below-s {
+    margin-right: 1.2rem;
+}
+
+.date-select .icon-rili {
+    margin-right: 0.7333333333333333rem;
+}
+
+.date-select .icon-below-s::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -0.5866666666666667rem;
+    width: 1px;
+    height: 0.6rem;
+    background-color: #d2d2d2;
+    transform: translateY(-50%);
+}
+
+.date-select input {
+    width: 7.2rem;
+    padding-left: 0.5333333333333333rem;
+}
+
+.keyword span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -0.43333333333333335rem;
+    width: 1px;
+    height: 0.6rem;
+    background-color: #d2d2d2;
+    transform: translateY(-50%);
+}
+
+.keyword span {
+    margin-left: 0.43333333333333335rem;
+}
+
+
+.date-select.keyword {
+    margin-bottom: 0.7333333333333333rem;
+}
+
+.btn-query {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 0.06666666666666667rem;
+    margin-bottom: 1.3333333333333333rem;
+}
+
+.progress-item {
+    height: 3.533333333333333rem;
+    border-radius: 0.06666666666666667rem;
+    margin-bottom: 0.4rem;
+}
+
+.p-head {
+    padding: 0 0.4rem;
+    height: 0.9666666666666667rem;
+    line-height: 0.9666666666666667rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.p-content {
+    width: 100%;
+    padding: 0 0.4rem;
+}
+
+.p-content table {
+    width: 100%;
+}
+
+.p-content td,
+.p-content th {
+    padding-top: 0.6rem;
+}

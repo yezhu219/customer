@@ -1,0 +1,79 @@
+
+.content {
+    height: auto;
+}
+.pro-container {
+    width: 600px;
+}
+.pro-item {
+    /*height: 150px;*/
+    margin-bottom: 20px;
+
+}
+
+.pro-item h5 {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.pro-item .date-select {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.date-picker {
+    height: 40px;
+    background-color: #f8f8f8;
+}
+.date-picker .icon-rili {
+    right: 30px;
+    top: 12px;
+}
+.date-select .btn-file {
+    display: inline-block;
+    border:none;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #438bf8;
+    border-radius: 3px;
+}
+#file {
+    height: 40px;
+    width: 70px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.date-select .btn-file::before {
+    content:"";
+    position: absolute;
+    height: 25px;
+    width: 1px;
+    background-color: #dedede;
+    left: -12px;
+    top: -4px;
+}
+
+.date-select.pro select {
+    width: 86%;
+}
+
+.footer {
+    height: 85px;
+    line-height: 85px;
+    padding: 0px 20px;
+}
+.footer span {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #438bf8;
+    color: #fff;
+    border-radius: 3px;
+}

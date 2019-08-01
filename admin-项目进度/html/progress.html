@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/icon/iconfont.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/progress.css">
+  <link rel="stylesheet" href="../lib/css/dcalendar.picker.css" />
+  <script type="text/javascript" src="../lib/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="../lib/js/dcalendar.picker.js"></script>
+</head>
+<body>
+<div class="container pr">
+  <div class="aside pa">
+    <ul class="nav pa text-c">
+      <li><a href="./progress.html"><i class="iconfont icon-liebiao mr-5"></i>施工进度实施单</a></li>
+      <li><a href="./report.html"><i class="iconfont icon-baobiao mr-5"></i>报表提交</a></li>
+      <li><a href="./any.html"><i class="iconfont icon-chaxun mr-5"></i>任意报表</a></li>
+      <li><a href="./query.html"><i class="iconfont icon-baobiaochaxun mr-5"></i>查询</a></li>
+    </ul>
+  </div>
+  <div class="main ">
+    <div class="header bg-f c-999 mb-20 pr">
+      <input type="text" placeholder="信息太多？搜搜看...">
+      <span class="fr">2019.12.12 12:59:59</span>
+      <i class="iconfont icon-sousuo pa"></i>
+    </div>
+    <div class="content bg-f pd-20 mb-20">
+      <div class="pro-container">
+        <div class="pro-item bg-f">
+          <h5 class="fw-600">日期</h5>
+          <div class="date-picker pr">
+            <input type="text" id="mydatepicker" placeholder="2019.7.31">
+            <span class=" iconfont icon-rili pa"></span>
+          </div>
+         
+        </div>
+        <div class="pro-item bg-f">
+          <h5 class="fw-600">施工项目</h5>
+          <div class="date-select pro pr">
+            <select class="pa">
+              <option value="人力资源部">人力资源部</option>
+              <option value="人力资源部">人力资源部</option>
+              <option value="人力资源部">人力资源部</option>
+            </select>
+            <!-- <span class="fl fz14">人力资源部</span> -->
+            <span class="fr iconfont icon-below-s"></span>
+          </div>
+        </div>
+        <div class="pro-item bg-f">
+          <h5 class="fw-600">施工方负责人</h5>
+          <div class="date-select">
+            <div class="fr btn-box pr">
+              <span class="btn-file fz12 c-fff text-c pr">选择文件</span>
+              <input type="file" id="file" class="pa">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer bg-f">
+      <span>提交</span>
+    </div>
+  </div>
+</div>
+  <script>
+    $(function () {
+      $('#mydatepicker').dcalendarpicker({ format: 'yyyy.mm.dd' });
+    })
+  </script>
+</body>
+</html>

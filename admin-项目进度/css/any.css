@@ -1,0 +1,40 @@
+.any  tr th{
+    width: 200px;
+
+}
+.any  tr th:nth-child(2) {
+    width: 300px;
+}
+
+.any  tr th:nth-child(3) {
+    width: 150px;
+}
+.any  tr th span {
+    font-weight: 600;
+}
+
+.any tr td {
+    height: 60px;
+    line-height: 60px;
+}
+.content {
+    height: auto;
+
+}
+
+.footer {
+    height: 60px;
+}
+
+.arrow-down::after {
+    content:'';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 7px;
+    right: -20px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #999;
+    border-bottom: 5px solid transparent;
+}

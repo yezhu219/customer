@@ -1,0 +1,113 @@
+.content {
+    padding: 0 0.4rem;
+    font-size: 0.4rem;
+}
+
+.content h5 {
+    color: #808080;
+    margin: 70px 0;
+}
+
+.date-select select {
+    width: 100%;
+    height: 1.2rem;
+    padding-left: 0.5333333333333333rem;
+    font-size: 0.4rem;
+    border-radius: 0.06666666666666667rem;
+}
+
+.date-select select option {
+    font-size: 0.4rem;
+}
+
+.date-select {
+    overflow: hidden;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.4rem;
+    border-radius: 0.06666666666666667rem;
+    margin-bottom: 0.98rem;
+}
+
+.date-select .iconfont {
+    right: 0;
+}
+
+
+
+.date-select .icon-below-s::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -0.5866666666666667rem;
+    width: 1px;
+    height: 0.6rem;
+    background-color: #d2d2d2;
+    transform: translateY(-50%);
+}
+
+.date-select input {
+    width: 7.2rem;
+    padding-left: 0.5333333333333333rem;
+}
+
+.keyword span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -0.43333333333333335rem;
+    width: 1px;
+    height: 0.6rem;
+    background-color: #d2d2d2;
+    transform: translateY(-50%);
+}
+
+.keyword span {
+    margin-left: 0.43333333333333335rem;
+}
+
+
+.date-select.keyword {
+    margin-bottom: 0.7333333333333333rem;
+}
+
+.btn-query {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 0.06666666666666667rem;
+    margin-bottom: 1.3333333333333333rem;
+}
+
+.sel-file {
+    margin-right: 0.4rem;
+}
+
+
+.sel-file span {
+    display: inline-block;
+    width: 2rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+
+.sel-file input {
+    width: 2rem;
+    height: 0.6rem;
+    top: 0.3rem;
+    opacity: 0;
+}
+
+.sel-file span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -0.43333333333333335rem;
+    width: 1px;
+    height: 0.6rem;
+    background-color: #d2d2d2;
+    transform: translateY(-50%);
+}
+
+.btn-query.submit {
+    margin-top: 3.533333333333333rem;
+}
