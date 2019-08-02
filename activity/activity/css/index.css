@@ -1,0 +1,160 @@
+.header {
+  height: 1.3066666666666666rem;
+}
+
+.img-letter {
+  height: 100%;
+}
+
+.header img {
+  height: 100%;
+}
+
+.header .icon-caidan {
+  margin: 0.4533333333333333rem 0.5066666666666667rem 0 0;
+}
+
+.header .icon-guanbi {
+  margin: 0.4533333333333333rem 0.5066666666666667rem 0 0;
+}
+
+.content {
+  background-color: #1c1919;
+  /* height: calc(100vh - 1.3066666666666666rem); */
+}
+
+.item img {
+  width: 100%;
+}
+
+.mask {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.des {
+  left: 50%;
+  bottom: 4.266666666666667rem;
+  transform: translateX(-50%);
+}
+
+.des h5 {
+  font-size: 0.37333333333333335rem;
+  margin-bottom: 0.5333333333333333rem;
+}
+
+.des p {
+  font-size: 0.24rem;
+  margin-bottom: 0.6666666666666666rem;
+  white-space: nowrap;
+}
+
+.des span {
+  display: inline-block;
+  font-size: 0.26666666666666666rem;
+  padding: 0.13333333333333333rem 0.26666666666666666rem;
+  line-height: 0.56rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.des.second p {
+  margin-bottom: 0.4666666666666667rem;
+}
+
+.logo {
+  margin-top: 0.9333333333333333rem;
+  margin-bottom: 0.6666666666666666rem;
+  height: 1.6666666666666667rem;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.links {
+  height: 1.2rem;
+  background-image: url(../img/link.png);
+  background-size: contain;
+  border-bottom: 0.013333333333333334rem solid #484848;
+  padding: 0 1.25rem;
+}
+.links li {
+  float: left;
+  width: 0.6666666666666666rem;
+  height: 0.6666666666666666rem;
+  margin-right: 1.55rem;
+}
+.links li:last-child{
+  margin-right: 0;
+}
+.footer {
+  height: 0.7466666666666667rem;
+  line-height: 0.7466666666666667rem;
+}
+
+.footer .img {
+  display: inline-block;
+  width: 0.22666666666666666rem;
+  height: 0.22666666666666666rem;
+  background-size: cover;
+  margin-right: 0.13333333333333333rem;
+  position: relative;
+  top: 0.05333333333333334rem;
+}
+
+.beian {
+  background-image: url(../img/dizi.png);
+}
+
+.guohui {
+  background-image: url(../img/guohui.png);
+}
+
+.b-beian {
+  margin-right: 0.4rem;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 1.3333333333333333rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.16rem;
+  height: 0.16rem;
+  background-color: #9b9997;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-right: 0.13333333333333333rem;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.nav {
+  padding-bottom: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nav li {
+  height: 1.4666666666666666rem;
+  line-height: 1.4666666666666666rem;
+  text-align: center;
+  font-size: 0.3466666666666667rem;
+  color: #505050;
+}

@@ -1,0 +1,252 @@
+ /*清除浮动*/
+ .clearfix:before,
+ .clearfix:after {
+   content: " ";
+   display: inline-block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+ }
+
+ .clearfix {
+   *zoom: 1;
+ }
+
+ /*文字居中*/
+ .text-c {
+   text-align: center;
+ }
+
+ .text-l {
+   text-align: left;
+ }
+
+ .text-r {
+   text-align: right;
+ }
+
+ .va-m {
+   vertical-align: middle;
+ }
+
+ /*字号设置*/
+ .fz32 {
+   font-size: 0.4266666666666667rem;
+ }
+
+ .fz30 {
+   font-size: 0.4rem;
+ }
+
+ .fz28 {
+   font-size: 0.37333333333333335rem;
+ }
+
+ .fz24 {
+   font-size: 0.32rem;
+ }
+
+ .fz22 {
+   font-size: 0.26666666666666666rem;
+ }
+
+ .fz20 {
+   font-size: 0.26666666666666666rem;
+ }
+
+ .fz18 {
+   font-size: 0.24rem;
+ }
+
+ .fz16 {
+   font-size: 0.21333333333333335rem;
+ }
+
+ .fz14 {
+   font-size: 0.18666666666666668rem;
+ }
+
+ .fz12 {
+   font-size: 0.16rem;
+ }
+
+ .fw-600 {
+   font-weight: 600;
+ }
+
+ .fw-400 {
+   font-weight: 400;
+ }
+
+ /* 行高*/
+ .lh-1 {
+   line-height: 1.2;
+ }
+
+ .lh-2 {
+   line-height: 1.5;
+ }
+
+ .lh-40 {
+   line-height: 0.5333333333333333rem;
+ }
+
+ /*超出省略*/
+ .text-ell {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }
+
+ /*背景色*/
+ .bg-f {
+   background-color: #fff;
+ }
+
+ .bg-c {
+   background-color: #ccc;
+ }
+
+ .bg-de {
+   background-color: #dedede;
+ }
+
+ .bg-fc {
+   background-color: #fcfcfc;
+ }
+
+ .bg-f4 {
+   background-color: #f4f4f4;
+ }
+
+ .bg-f6 {
+   background-color: #f6f6f6;
+ }
+
+ /*颜色*/
+ .c-fff {
+   color: #fff;
+ }
+
+ .c-333 {
+   color: #333;
+ }
+
+ .c-666 {
+   color: #666;
+ }
+
+ .c-999 {
+   color: #999;
+ }
+
+ /*间距*/
+ .ml-20 {
+   margin-left: 0.26666666666666666rem;
+ }
+
+ .ml-10 {
+   margin-left: 0.13333333333333333rem;
+ }
+
+ .mr-20 {
+   margin-right: 0.26666666666666666rem;
+ }
+
+ .mr-5 {
+   margin-right: 0.06666666666666667rem;
+ }
+
+ .mr-10 {
+   margin-right: 0.13333333333333333rem;
+ }
+
+ .mt-10 {
+   margin-top: 0.13333333333333333rem;
+ }
+
+ .mt-20 {
+   margin-top: 0.26666666666666666rem;
+ }
+
+ .pt-20 {
+   padding-top: 0.26666666666666666rem;
+ }
+
+ .pt-10 {
+   padding: 0.13333333333333333rem;
+ }
+
+ .pd-10 {
+   padding: 0.13333333333333333rem;
+ }
+
+ .pd-20 {
+   padding: 0.26666666666666666rem;
+ }
+
+ .mb-10 {
+   margin-bottom: 0.13333333333333333rem;
+ }
+
+ .mb-20 {
+   margin-bottom: 0.26666666666666666rem;
+ }
+
+ /*定位*/
+ .pr {
+   position: relative;
+ }
+
+ .pa {
+   position: absolute;
+ }
+
+ /*盒子阴影*/
+ .box-s1 {
+   box-shadow: 0.013333333333333334rem 0.013333333333333334rem 0.2rem 0.04rem rgba(0, 0, 0, 0.1);
+   border-radius: 0.06666666666666667rem;
+ }
+
+ .box-s2 {
+   box-shadow: 0rem 0.05333333333333334rem 0.10666666666666667rem 0rem rgba(0, 0, 0, 0.1);
+ }
+
+ /*边框*/
+ .line-b {
+   border-bottom: 0.013333333333333334rem solid #dedede;
+ }
+
+ /*鼠标小手*/
+ .cp {
+   cursor: pointer;
+ }
+
+ /*盒子居中*/
+ .mg-a {
+   margin: 0 auto;
+ }
+
+ .ps-c {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .fl {
+   float: left;
+ }
+
+ .fr {
+   float: right;
+ }
+
+ .pdt-20 {
+   padding-top: 0.26666666666666666rem;
+ }
+
+ /*公共样式*/
+ .iconfont {
+   font-size: 0.4533333333333333rem;
+ }
