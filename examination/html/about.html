@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/public.css">
   <link rel="stylesheet" href="../css/about.css">
   <script src="../lib/swiper/js/swiper.min.js"></script>
+  <script src="../lib/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
@@ -20,11 +21,11 @@
     </div>
     <div class="nav fr c-2b">
       <ul class="">
-        <li class="fl"><a href="./index.html">首页</a></li>
-        <li class="fl"><a href="./health.html">健康知识</a></li>
-        <li class="fl"><a href="./package.html">体检套餐</a></li>
-        <li class="fl"><a href="./about.html">关于我们</a></li>
-        <li class="fl"><a href="">报告查询</a></li>
+        <li class="fl"><a href="../index.html" data-url="index">首页</a></li>
+        <li class="fl"><a href="./health.html" data-url="health">健康知识</a></li>
+        <li class="fl"><a href="./package.html" data-url="package">体检套餐</a></li>
+        <li class="fl"><a href="./about.html" data-url="about">关于我们</a></li>
+        <li class="fl"><a href="" data-url="report">报告查询</a></li>
         <li class="fl"><span class="search va-m"></span></li>
 
       </ul>
@@ -32,11 +33,11 @@
   </div>
   <div class="main">
     <div class="about ">
-      <div class="comInfo m-130 clearfix">
-        <div class="video fl">
+      <div class="comInfo m-130 ">
+        <div class="video">
           <img src="../img/video-cover.png" alt="">
         </div>
-        <div class="com-text fl fz14 c-fff">
+        <div class="com-text  fz14 c-fff">
           <h5 class="fz20 c-fff mb-40">关于我们 - 简阳威尼斯健康体检中心</h5>
           <p class="mb-20 fz14 lh-2">
             简阳威昵斯健康体检中心是集健康体检、健康指导、健康教育于一体的专业健康管理机构，拥有专业的健康管理团队，高端的医疗设备、设施，始终坚持“我们懂您的辛苦，更关注您的健康”理念，为客户提供优质、高效、便捷、人性化的健康管理。
@@ -44,11 +45,11 @@
           <p class="lh-26">联系电话：028-60396789</p>
           <p class="lh-26">地址：简阳市简城镇滨江路南段91-97号</p>
           <p class="lh-26">
-          乘车路线：市内可乘坐7路、11路、12路、14路、21路到滨江路南段站下车，步行约100米即可到达；亦可乘坐1路、5路、10路、13路、17路到南环路口下车，步行约300米即可到达。</p>
+            乘车路线：市内可乘坐7路、11路、12路、14路、21路到滨江路南段站下车，步行约100米即可到达；亦可乘坐1路、5路、10路、13路、17路到南环路口下车，步行约300米即可到达。</p>
         </div>
       </div>
     </div>
-    
+
     <!-- 特色服务 -->
     <div class="special">
       <h5 class="c-80 title text-c pr fz28">特色服务</h5>
@@ -61,7 +62,7 @@
               的饮食、运动、心理、睡眠、疾病预防乃至诊治提供
               科学的全程信息化服务。
             </span>
-           
+
           </div>
         </div>
         <div class="special-item">
@@ -69,9 +70,9 @@
           <div class="right ">
             <p class="fz18 c-80 mb-20">体检报告解读</p>
             <span class="fz14 c-333">
-            检后由健康管理专家详细解读体检结果，结合客户报告和个人具体情况给出有针对性的健康管理方案。
+              检后由健康管理专家详细解读体检结果，结合客户报告和个人具体情况给出有针对性的健康管理方案。
             </span>
-        
+
           </div>
         </div>
         <div class="special-item">
@@ -81,7 +82,7 @@
             <span class="fz14 c-333">
               我们设有各种不同需求的体检套餐，同时还可以为您量身定做个性化的体检项目组合。
             </span>
-        
+
           </div>
         </div>
         <div class="special-item">
@@ -141,7 +142,7 @@
           </div>
           <div class="swiper-slide">
             <img src="../img/c3.png" alt="">
-            <p >外景</p>
+            <p>外景</p>
           </div>
           <div class="swiper-slide">
             <img src="../img/c3.png" alt="">
@@ -150,7 +151,7 @@
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
-      
+
         <!-- 如果需要导航按钮 -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
@@ -162,17 +163,19 @@
     <div class="equipment">
       <h5 class="c-80 fz28 text-c mb-20">检验设备</h5>
       <p class="fz16 text-c c-666 mb-40">先进的设备和优雅的环境</p>
-      <div class="equ">
+      <div class="equ m-130">
         <div class="equ-item">
           <img src="../img/ss1.jpg" alt="">
         </div>
         <div class="equ-item text">
           <h5 class="c-80 fz20 mb-40">先进的设备</h5>
-          <p class="fz14 lh-26">体检中心拥有先进的医疗设备：1.5T多功能核磁共振、40排多功能螺旋CT、5D彩色超声诊断仪、贝克曼全自动生化分析仪、贝克曼全自动免疫分析仪等，保障体检结果真实、准确。检区建筑面积约5600平方米，体检场所宽敞、整洁、优雅。</p>
+          <p class="fz14 lh-26">
+            体检中心拥有先进的医疗设备：1.5T多功能核磁共振、40排多功能螺旋CT、5D彩色超声诊断仪、贝克曼全自动生化分析仪、贝克曼全自动免疫分析仪等，保障体检结果真实、准确。检区建筑面积约5600平方米，体检场所宽敞、整洁、优雅。
+          </p>
         </div>
         <div class="equ-item">
-            <img src="../img/ss2.jpg" alt="">
-            <p class="c-80 fz16 text-c lh-26">DR</p>
+          <img src="../img/ss2.jpg" alt="">
+          <p class="c-80 fz16 text-c lh-26">DR</p>
         </div>
         <div class="equ-item">
           <img src="../img/ss3.jpg" alt="">
@@ -191,69 +194,70 @@
     <!-- 专业医疗团队 -->
     <div class="team">
       <h5 class="c-80 fz28 text-c mb-20">专业医疗团队</h5>
-      <p class="info fz14">拥有较强的专家团队和雄厚的综合实力，专业人员30余人，其中高级职称5人，中级职称8人，健康管理师2人，其中大部分具有三级甲等医院工作的经历和经验，他们将在新的平台继续提供优质服务。</p>
-      <div class="team-content">
+      <p class="info fz14">拥有较强的专家团队和雄厚的综合实力，专业人员30余人，其中高级职称5人，中级职称8人，健康管理师2人，其中大部分具有三级甲等医院工作的经历和经验，他们将在新的平台继续提供优质服务。
+      </p>
+      <div class="team-content m-130">
         <div class="team-item">
           <img src="../img/hxy.png" alt="">
           <div>
-            <p class="fz18 name mb-20">黄晓燕</p>
-            <p class="c-80 mb-20 fz12 position">主治医师</p>
+            <p class="fz18 name mb-10">黄晓燕</p>
+            <p class="c-80 mb-10 fz12 position">主治医师</p>
             <p class="experience fz14">2018年以前一直任职于简阳市中医医院超声科，现任简阳威昵斯健康体检中心超声科主任。</p>
           </div>
         </div>
         <div class="team-item">
           <img src="../img/jwp.png" alt="">
           <div>
-            <p class="fz18 name mb-20">姜维平</p>
-            <p class="c-80 mb-20 fz12 position">主治医师</p>
+            <p class="fz18 name mb-10">姜维平</p>
+            <p class="c-80 mb-10 fz12 position">主治医师</p>
             <p class="experience fz14">2018年以前一直任职于简阳市中医医院超声科，现任简阳威昵斯健康体检中心超声科主任。</p>
           </div>
         </div>
         <div class="team-item">
           <img src="../img/lxl.png" alt="">
           <div>
-            <p class="fz18 name mb-20">李晓玲</p>
-            <p class="c-80 mb-20 fz12 position">主治医师</p>
+            <p class="fz18 name mb-10">李晓玲</p>
+            <p class="c-80 mb-10 fz12 position">主治医师</p>
             <p class="experience fz14">2018年以前一直任职于简阳市中医医院超声科，现任简阳威昵斯健康体检中心超声科主任。</p>
           </div>
         </div>
         <div class="team-item">
           <img src="../img/lxy.png" alt="">
           <div>
-            <p class="fz18 name mb-20">刘晓燕</p>
-            <p class="c-80 mb-20 fz12 position">主治医师</p>
+            <p class="fz18 name mb-10">刘晓燕</p>
+            <p class="c-80 mb-10 fz12 position">主治医师</p>
             <p class="experience fz14">2018年以前一直任职于简阳市中医医院超声科，现任简阳威昵斯健康体检中心超声科主任。</p>
           </div>
         </div>
         <div class="team-item">
           <img src="../img/pr.png" alt="">
           <div>
-            <p class="fz18 name mb-20">庞容</p>
-            <p class="c-80 mb-20 fz12 position">主治医师</p>
+            <p class="fz18 name mb-10">庞容</p>
+            <p class="c-80 mb-10 fz12 position">主治医师</p>
             <p class="experience fz14">2018年以前一直任职于简阳市中医医院超声科，现任简阳威昵斯健康体检中心超声科主任。</p>
           </div>
         </div>
         <div class="team-item">
           <img src="../img/pls.png" alt="">
           <div>
-            <p class="fz18 name mb-20">彭莲抒</p>
-            <p class="c-80 mb-20 fz12 position">主治医师</p>
+            <p class="fz18 name mb-10">彭莲抒</p>
+            <p class="c-80 mb-10 fz12 position">主治医师</p>
             <p class="experience fz14">2018年以前一直任职于简阳市中医医院超声科，现任简阳威昵斯健康体检中心超声科主任。</p>
           </div>
         </div>
         <div class="team-item">
           <img src="../img/zzw.png" alt="">
           <div>
-            <p class="fz18 name mb-20">张治维</p>
-            <p class="c-80 mb-20 fz12 position">主治医师</p>
+            <p class="fz18 name mb-10">张治维</p>
+            <p class="c-80 mb-10 fz12 position">主治医师</p>
             <p class="experience fz14">2018年以前一直任职于简阳市中医医院超声科，现任简阳威昵斯健康体检中心超声科主任。</p>
           </div>
         </div>
         <div class="team-item">
           <img src="../img/zhl.png" alt="">
           <div>
-            <p class="fz18 name mb-20">钟惠玲</p>
-            <p class="c-80 mb-20 fz12 position">主治医师</p>
+            <p class="fz18 name mb-10">钟惠玲</p>
+            <p class="c-80 mb-10 fz12 position">主治医师</p>
             <p class="experience fz14">2018年以前一直任职于简阳市中医医院超声科，现任简阳威昵斯健康体检中心超声科主任。</p>
           </div>
         </div>
@@ -280,24 +284,34 @@
 
 
   <script>
-  
-  var mySwiper = new Swiper('.swiper-container', {
-  loop: true,
-  width:600,
-  height:400,
-  slidesPerView: 2,
-  centeredSlides: true,
-  spaceBetween: 200,
-  
-  pagination: {
-    el: '.swiper-pagination',
-  },
-   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-})
-    
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true,
+      width: 600,
+      height: 400,
+      slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: 200,
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+
+     
+    $(function () {
+      let url = window.location.href
+      $('.nav li a').each(function () {
+        let dataUrl = $(this).attr('data-url')
+        if (url.indexOf(dataUrl) != -1) {
+          $(this).addClass('change')
+        }
+      })
+    })
+
   </script>
 </body>
 

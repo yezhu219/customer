@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/public.css">
   <link rel="stylesheet" href="./css/index.css">
+  <script src="./lib/jquery-1.11.0.min.js"></script>
+  <script src="./js/index.js"></script>
 </head>
 <body>
   <div class="header fz16 ">
@@ -16,11 +18,11 @@
     </div>
     <div class="nav fr c-2b">
       <ul class="">
-        <li class="fl"><a href="./index.html">首页</a></li>
-        <li class="fl"><a href="./html/health.html">健康知识</a></li>
-        <li class="fl"><a href="./html/package.html">体检套餐</a></li>
-        <li class="fl"><a href="./html/about.html">关于我们</a></li>
-        <li class="fl"><a href="">报告查询</a></li>
+        <li class="fl"><a href="./index.html" data-url="index">首页</a></li>
+        <li class="fl"><a href="./html/health.html" data-url="health">健康知识</a></li>
+        <li class="fl"><a href="./html/package.html" data-url="package">体检套餐</a></li>
+        <li class="fl"><a href="./html/about.html" data-url="about">关于我们</a></li>
+        <li class="fl"><a href="" data-url="report">报告查询</a></li>
         <li class="fl"><span class="search va-m"></span></li>
         
       </ul>
@@ -31,7 +33,7 @@
   <div class="main">
     <div class="reservation pr">
       <div class="intro ps-c">
-        <h5 class="fw-600 fz50 mb-20 c-fff">您的私人<span class="c-80 fw-600">健康顾问</span></h5>
+        <h5 class="fw-600 fz50 mb-40 c-fff">您的私人<span class="c-80 fw-600">健康顾问</span></h5>
         <p class="fz20 c-fff mb-20 ">YOUR HEALTH PRIVATE CONSULTANT</p>
         <p class="fz16  c-fff mb-10">为您提供个性化体检服务方案、健康评估、沙龙式会员管理、科</p>
         <p class="fz16  c-fff">学化疾病预警、健康干预、健康处方、便捷化专家门诊等服务。</p>
@@ -49,11 +51,11 @@
 
     <div class="about ">
       <h5 class="fz26 c-fff text-c pr fw-600 title">关于我们</h5>
-      <div class="comInfo m-130 clearfix">
-        <div class="video fl">
+      <div class="comInfo m-130 ">
+        <div class="video ">
           <img src="./img/video-cover.png" alt="">
         </div>
-        <div class="com-text fl fz14 c-fff">
+        <div class="com-text  fz14 c-fff">
           <p class="mb-40 lh-2">简阳威尼斯门诊部是经简阳市卫生和计划生育局批准，集健康体检、健康指导、健康教育与一体
             的专业健康管理机构，位于成都市简阳市市滨江路南段91-97号，交通便利，环境整洁、舒适。门
             诊部拥有专业的健康管理团队，高端的医疗设备、设施，致力于“健康无价，预防第一”的理念，
@@ -72,66 +74,92 @@
     <div class="new ">
       <h5 class="title fz26 c-80 text-c fw-600 pr">最新消息</h5>
       <div class="news ">
-        <div class="news-item   clearfix">
-          <div class="news-img fl">
-            <img src="./img/i1.png" alt="">
-          </div>
-          <div class="fr">
-            <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
-            <div class="news-time fz12">2019/07/12</div>
-            <div class="news-des fz12">
-              上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+        <div class="news-item   ">
+         <div class="new-item-line">
+            <div class="news-img ">
+              <img src="./img/i1.png" alt="">
+            </div>
+            <div class="">
+              <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
+              <div class="news-time fz12">2019/07/12</div>
+              <div class="news-des fz12">
+                上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+              </div>
+            </div>
+         </div>
+        </div>
+        <div class="news-item   ">
+          <div class="new-item-line">
+            <div class="news-img ">
+              <img src="./img/i1.png" alt="">
+            </div>
+            <div class="">
+              <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
+              <div class="news-time fz12">2019/07/12</div>
+              <div class="news-des fz12">
+                上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+              </div>
             </div>
           </div>
         </div>
-        <div class="news-item   clearfix">
-          <div class="news-img fl">
-            <img src="./img/i1.png" alt="">
-          </div>
-          <div class="fr">
-            <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
-            <div class="news-time fz12">2019/07/12</div>
-            <div class="news-des fz12">
-              上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+        <div class="news-item   ">
+          <div class="new-item-line">
+            <div class="news-img ">
+              <img src="./img/i1.png" alt="">
+            </div>
+            <div class="">
+              <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
+              <div class="news-time fz12">2019/07/12</div>
+              <div class="news-des fz12">
+                上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+              </div>
             </div>
           </div>
         </div>
-        <div class="news-item   clearfix">
-          <div class="news-img fl">
-            <img src="./img/i1.png" alt="">
-          </div>
-          <div class="fr">
-            <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
-            <div class="news-time fz12">2019/07/12</div>
-            <div class="news-des fz12">
-              上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+        <div class="news-item   ">
+          <div class="new-item-line">
+            <div class="news-img ">
+              <img src="./img/i1.png" alt="">
+            </div>
+            <div class="">
+              <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
+              <div class="news-time fz12">2019/07/12</div>
+              <div class="news-des fz12">
+                上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+              </div>
             </div>
           </div>
         </div>
-        <div class="news-item   clearfix">
-          <div class="news-img fl">
-            <img src="./img/i1.png" alt="">
-          </div>
-          <div class="fr">
-            <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
-            <div class="news-time fz12">2019/07/12</div>
-            <div class="news-des fz12">
-              上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+        <div class="news-item   ">
+          <div class="new-item-line">
+            <div class="news-img ">
+              <img src="./img/i1.png" alt="">
+            </div>
+            <div class="">
+              <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
+              <div class="news-time fz12">2019/07/12</div>
+              <div class="news-des fz12">
+                上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+              </div>
             </div>
           </div>
         </div>
-        <div class="news-item   clearfix">
-          <div class="news-img fl">
-            <img src="./img/i1.png" alt="">
-          </div>
-          <div class="fr">
-            <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
-            <div class="news-time fz12">2019/07/12</div>
-            <div class="news-des fz12">
-              上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+        <div class="news-item   ">
+          <div class="new-item-line">
+            <div class="news-img ">
+              <img src="./img/i1.png" alt="">
+            </div>
+            <div class="">
+              <div class="news-title fz16">梅奥诊所发明新式培养法，可使T细胞识别多种癌细</div>
+              <div class="news-time fz12">2019/07/12</div>
+              <div class="news-des fz12">
+                上海发布其在中国精准医疗领域的解决方案建议书，内容涉及创新解决方案、合作案例、参考架构推…
+              </div>
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </div>

@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/public.css">
-  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/health.css">
+  <script src="../lib/swiper/js/swiper.min.js"></script>
+  <script src="../lib/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
@@ -18,17 +21,136 @@
     </div>
     <div class="nav fr c-2b">
       <ul class="">
-        <li class="fl"><a href="../index.html">首页</a></li>
-        <li class="fl"><a href="./health.html">健康知识</a></li>
-        <li class="fl"><a href="./package.html">体检套餐</a></li>
-        <li class="fl"><a href="./about.html">关于我们</a></li>
-        <li class="fl"><a href="">报告查询</a></li>
+        <li class="fl"><a href="../index.html" data-url="index">首页</a></li>
+        <li class="fl"><a href="./health.html" data-url="health">健康知识</a></li>
+        <li class="fl"><a href="./package.html" data-url="package">体检套餐</a></li>
+        <li class="fl"><a href="./about.html" data-url="about">关于我们</a></li>
+        <li class="fl"><a href="" data-url="report">报告查询</a></li>
         <li class="fl"><span class="search va-m"></span></li>
 
       </ul>
     </div>
   </div>
-  <div class="main"></div>
+
+
+
+
+  <div class="main">
+    <div class="health">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">
+            <div class="slide-box m-130">
+              <div class="slide-text">
+                <div class=" fz26 c-80 lh-36">快速缓解眼疲劳 最有效的护眼方法推荐</div>
+                <p class="fz14 lh-26">缓解眼疲劳最本质的方法就是让眼睛休息。相信很上班族的朋友们是不愿将视线从电脑中转移的。不过我们可以在工作中休息一下，其实方法很简单，比如5分钟的电话时间你完全可以把眼睛从电脑前移开，边打边休息。</p>
+              </div>
+              <div class="slide-img">
+                <img src="../img/slide1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-box m-130">
+              <div class="slide-text">
+                <div class=" fz26 c-80 lh-36">2快速缓解眼疲劳 最有效的护眼方法推荐</div>
+                <p class="fz14 lh-26">
+                  缓解眼疲劳最本质的方法就是让眼睛休息。相信很上班族的朋友们是不愿将视线从电脑中转移的。不过我们可以在工作中休息一下，其实方法很简单，比如5分钟的电话时间你完全可以把眼睛从电脑前移开，边打边休息。</p>
+              </div>
+              <div class="slide-img">
+                <img src="../img/slide1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-box m-130">
+              <div class="slide-text">
+                <div class=" fz26 c-80 lh-36">3快速缓解眼疲劳 最有效的护眼方法推荐</div>
+                <p class="fz14 lh-26">
+                  缓解眼疲劳最本质的方法就是让眼睛休息。相信很上班族的朋友们是不愿将视线从电脑中转移的。不过我们可以在工作中休息一下，其实方法很简单，比如5分钟的电话时间你完全可以把眼睛从电脑前移开，边打边休息。</p>
+              </div>
+              <div class="slide-img">
+                <img src="../img/slide1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="tabBar m-130 pr">
+        <div class="tabBar-header">
+          <div class="header-nav">
+            <div class="header-nav-item fz18 lh-26 c-333 pr active" data-name="health">健康养生</div>
+            <div class="header-nav-item fz18 lh-26 c-333 pr " data-name="guide">体检指南</div>
+            <div class="header-nav-item fz18 lh-26 c-333 pr " data-name="project">体检项目</div>
+            <div class="header-nav-item fz18 lh-26 c-333 pr " data-name="advisory">健康咨询</div>
+            <div class="header-nav-item fz18 lh-26 c-333 pr " data-name="news">体检资讯</div>
+          </div>
+          <div class="header-search ">
+            <div class="pr" style="display: inline-block;">
+              <input type="text" placeholder="输入关键字搜索">
+              <div class="icon-search pa"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tabbar-panel">
+          <div id='health'>
+            <div class="panel-item">
+              <div class="panel-item-img mb-10"><img src="../img/n1.png" alt=""></div>
+              <div class="panel-item-title  mb-10">视力下降的表现有哪些 引起视力减退的疾病有哪些？</div>
+              <div class="panel-item-time mb-10 fz12">2019/06/12 | 健康养生</div>
+              <div class="panel-item-des fz14 lh-24">视力突然下降是怎么回事呢?视力下降的表现有哪些，引起视力减退的疾病有哪些?对于这些问题，相信大多数人都是不知道的。</div>
+            </div>
+            <div class="panel-item">
+              <div class="panel-item-img mb-10"><img src="../img/n1.png" alt=""></div>
+              <div class="panel-item-title  mb-10">视力下降的表现有哪些 引起视力减退的疾病有哪些？</div>
+              <div class="panel-item-time mb-10 fz12">2019/06/12 | 健康养生</div>
+              <div class="panel-item-des fz14 lh-24">视力突然下降是怎么回事呢?视力下降的表现有哪些，引起视力减退的疾病有哪些?对于这些问题，相信大多数人都是不知道的。</div>
+            </div>
+            <div class="panel-item">
+              <div class="panel-item-img mb-10"><img src="../img/n1.png" alt=""></div>
+              <div class="panel-item-title  mb-10">视力下降的表现有哪些 引起视力减退的疾病有哪些？</div>
+              <div class="panel-item-time mb-10 fz12">2019/06/12 | 健康养生</div>
+              <div class="panel-item-des fz14 lh-24">视力突然下降是怎么回事呢?视力下降的表现有哪些，引起视力减退的疾病有哪些?对于这些问题，相信大多数人都是不知道的。</div>
+            </div>
+            <div class="panel-item">
+              <div class="panel-item-img mb-10"><img src="../img/n1.png" alt=""></div>
+              <div class="panel-item-title  mb-10">视力下降的表现有哪些 引起视力减退的疾病有哪些？</div>
+              <div class="panel-item-time mb-10 fz12">2019/06/12 | 健康养生</div>
+              <div class="panel-item-des fz14 lh-24">视力突然下降是怎么回事呢?视力下降的表现有哪些，引起视力减退的疾病有哪些?对于这些问题，相信大多数人都是不知道的。</div>
+            </div>
+            <div class="panel-item">
+              <div class="panel-item-img mb-10"><img src="../img/n1.png" alt=""></div>
+              <div class="panel-item-title  mb-10">视力下降的表现有哪些 引起视力减退的疾病有哪些？</div>
+              <div class="panel-item-time mb-10 fz12">2019/06/12 | 健康养生</div>
+              <div class="panel-item-des fz14 lh-24">视力突然下降是怎么回事呢?视力下降的表现有哪些，引起视力减退的疾病有哪些?对于这些问题，相信大多数人都是不知道的。</div>
+            </div>
+            <div class="panel-item">
+              <div class="panel-item-img mb-10"><img src="../img/n1.png" alt=""></div>
+              <div class="panel-item-title  mb-10">视力下降的表现有哪些 引起视力减退的疾病有哪些？</div>
+              <div class="panel-item-time mb-10 fz12">2019/06/12 | 健康养生</div>
+              <div class="panel-item-des fz14 lh-24">视力突然下降是怎么回事呢?视力下降的表现有哪些，引起视力减退的疾病有哪些?对于这些问题，相信大多数人都是不知道的。</div>
+            </div>
+          </div>
+          <div id="guide">guide</div>
+          <div id="project">project</div>
+          <div id="advisory">advisory</div>
+          <div id="news">news</div>
+        </div>
+        <div class="pageNation pa">
+          <div class="page-item selected">1</div>
+          <div class="page-item">2</div>
+          <div class="page-item">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <div class="footer bg-p pr">
     <div class="m-130">
       <div class="phone fl ps-c">
@@ -45,6 +167,42 @@
       <p class="copyright fr fz12">@2019. All Rights Reserved 简阳市威尼斯健康体检中心</p>
     </div>
   </div>
+
+
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true, // 循环模式选项
+      height:448,
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+      }
+    })   
+    
+    $(function () {
+        let url = window.location.href
+         $('.tabbar-panel').children().hide()
+         $('.tabbar-panel :first-child').show()
+        $('.nav li a').each(function () {
+          let dataUrl = $(this).attr('data-url')
+          if (url.indexOf(dataUrl) != -1) {
+            $(this).addClass('change')
+          }
+        })
+
+        $('.header-nav-item').click(function(){
+          $(this).addClass('active').siblings().removeClass('active')
+          let itemName = $(this).attr('data-name')
+          $('.tabbar-panel').find(`#${itemName}`).show().siblings().hide()
+
+        })
+
+        $('.panel-item').click(function(){
+          location.href='./detail.html'
+        })
+
+      })
+  </script>
 </body>
 
 </html>

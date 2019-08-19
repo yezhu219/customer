@@ -5,18 +5,24 @@
     padding-top: 40px;
     margin-bottom: 60px;
     .comInfo {
-      // margin-left: 210px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      min-width: 900px;
     }
     .video {
       width: 400px;
       height: 270px;
+      flex: 1;
       img {
-        width: 100%;
+        // width: 100%;
         height: 100%;
+        margin: 0 auto;
       }
     }
     .com-text {
-      margin-left: 90px;
+      flex: 1;
+      // margin-left: 90px;
       width: 500px;
       height: 244px;
       .btn-more {
@@ -47,12 +53,14 @@
 .special-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content:flex-start;
-  margin: 0 150px;
+  justify-content: flex-start;
+  align-content: space-around;
+  margin: 0 auto;
 }
 .special-item {
   display: flex;
-  margin-right: 120px;
+  flex: 0 0 50%;
+  justify-content: center;
   margin-bottom: 60px;
   &:nth-child(2n) {
     margin-right: 0;
@@ -66,24 +74,23 @@
     }
   }
   .right {
-    p {
-      
-    }
-    span {
-      display: inline-block;
-      width: 320px;
-      line-height: 32px;
-    }
+    width: 330px;
+    line-height: 32px;
+    // span {
+    //   display: inline-block;
+    //   width: 320px;
+    //   line-height: 32px;
+    // }
   }
 }
 
 .center {
-  background-color: #D8D8D8;
+   background-color: rgb(247, 247, 247);
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 40px;
   .swiper-container {
-    width: 900px;
+    // width: 900px;
     height: 340px;
   }
   .swiper-slide {
@@ -112,11 +119,14 @@
 .equ {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
+  // margin-left: 40px;
   padding-bottom: 60px;
+  justify-content: space-between;
+  
 }
 .equ-item {
-  margin-right: 75px;
+  flex:0 0 30%;
+  margin-bottom: 50px;
   &:first-child {
     margin-right: 0;
   }
@@ -124,12 +134,12 @@
     margin-right: 0;
   }
   img {
-    width: 344px;
-    height: 244px;
+    width: 100%;
+    height: 100%;
   }
   &.text {
-    width: 419px;
-    height: 245px;
+    flex: 0 0 36.1%;
+    margin-left: -6%;
     background-color: #F9F9F9 ;
     padding: 40px 20px 20px 20px;
     p {
@@ -142,7 +152,8 @@
 }
 
 .team {
-  background-color: #D8D8D8 ;
+  // background-color: #D8D8D8 ;
+  background-color: rgb(247, 247, 247);
   padding-top: 80px;
   .info {
     width: 524px;
@@ -155,17 +166,15 @@
 .team-content {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
+  justify-content: space-between;
 }
 .team-item {
   display:flex;
-  width: 570px;
-  height: 190px;
+  flex: 0 0 48%;
   background-color: #fff;
-  margin-right: 40px;
   align-items: center;
   justify-content: center;
-  padding: 0  40px;
+  padding: 20px 40px;
   margin-bottom: 40px;
   img {
     width: 100px;
