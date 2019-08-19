@@ -54,9 +54,6 @@
 .fz12 {
   font-size: 12px;
 }
-.fz50 {
-  font-size: 50px;
-}
 .fw-600 {
   font-weight: 600;
 }
@@ -117,11 +114,11 @@
 .c-50 {
   color: #505050;
 }
-.c-80 {
-  color: #80458E;
-}
 .c-2b {
   color: #2B202C ;
+}
+.c-80 {
+  color: #80458E;
 }
 /*间距*/
 .m-130 {
@@ -166,6 +163,15 @@
 .mb-20 {
   margin-bottom: 20px;
 }
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
 /*定位*/
 .pr {
   position: relative;
@@ -206,6 +212,9 @@
 }
 .pdt-20 {
   padding-top: 20px;
+}
+.lh-26 {
+  line-height: 22px;
 }
 /*公共样式*/
 .header {
