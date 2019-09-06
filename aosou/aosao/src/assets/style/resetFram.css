@@ -1,0 +1,24 @@
+/*重置element样式*/
+.el-main {
+  padding: 0;
+}
+.el-container {
+  height: 100%;
+}
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 100%;
+}
+/*特殊样式*/
+.el-table__header th {
+  background-color: #f4f4f4;
+}
+.el-select {
+  width: 100%;
+}
+.el-select .el-input__suffix {
+  display: none;
+}
+.el-date-editor .el-input__prefix {
+  display: none;
+}
